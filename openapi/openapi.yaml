@@ -6,7 +6,7 @@ info:
   contact:
     name: Contact our support
     email: vldburlacu@yahoo.com
-    url: http://example.com/contact
+    url: https://spring-framework.guru
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
@@ -22,11 +22,11 @@ info:
 externalDocs:
   description: "Find out how to create a GitHub repo for your OpenAPI definition."
   url: 'https://github.com/Redocly/create-openapi-repo'
-#tags:
-#  - name: Echo
-#    description: "Example echo operations."
-#  - name: User
-#    description: "Example actions on user accounts."
+tags:
+  - name: Customer
+    description: "Customer operations"
+  - name: User
+    description: "Example actions on user accounts."
 #  - name: Admin
 #    description: "Example operations reserved for administrators."
 #  - name: Info
@@ -48,10 +48,14 @@ servers:
       tenant:
         default: www
         description: Your tenant id
-  - url: https://example.com/api/v1
+  - url: https://springframework.guru/api/v1
 paths:
   '/users/{username}':
     $ref: 'paths/users_{username}.yaml'
+  '/v1/customers':
+    $ref: 'paths/v1/customers.yaml'
+  '/v1/customers/{customer_id}':
+    $ref: 'paths/v1/customers_{customer_id}.yaml'
 #  '/user':
 #    $ref: 'paths/user.yaml'
 #  '/user/list':
@@ -62,6 +66,8 @@ paths:
 #    $ref: paths/pathItemWithExamples.yaml
 #  '/echo':
 #    $ref: 'paths/echo.yaml'
+security:
+  - basic_auth: []
 components:
   securitySchemes:
     main_auth:
