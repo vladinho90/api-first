@@ -6,7 +6,7 @@ info:
   contact:
     name: Contact our support
     email: vldburlacu@yahoo.com
-    url: http://example.com/contact
+    url: https://spring-framework.guru
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
@@ -22,7 +22,7 @@ info:
 externalDocs:
   description: "Find out how to create a GitHub repo for your OpenAPI definition."
   url: 'https://github.com/Redocly/create-openapi-repo'
-#tags:
+tags:
 #  - name: Echo
 #    description: "Example echo operations."
 #  - name: User
@@ -31,8 +31,8 @@ externalDocs:
 #    description: "Example operations reserved for administrators."
 #  - name: Info
 #    description: "Example operations for retrieving information."
-#  - name: Tag
-#    description: "This is a tag description."
+  - name: Tag
+    description: "This is a tag description."
 x-tagGroups:
   - name: General
     tags:
