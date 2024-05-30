@@ -1,0 +1,12 @@
+type: object
+description: The dimensions of a product
+properties:
+  length:
+    type: number
+    description: Length of the product
+  width:
+    type: number
+    description: Width of the product
+  height:
+    type: number
+    description: Height of the product

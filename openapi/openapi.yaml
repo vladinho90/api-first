@@ -25,23 +25,8 @@ externalDocs:
 tags:
   - name: Customer
     description: "Customer operations"
-  - name: User
-    description: "Example actions on user accounts."
-#  - name: Admin
-#    description: "Example operations reserved for administrators."
-#  - name: Info
-#    description: "Example operations for retrieving information."
-#  - name: Tag
-#    description: "This is a tag description."
-x-tagGroups:
-  - name: General
-    tags:
-      - User
-      - Info
-      - Echo
-  - name: Administration
-    tags:
-      - Admin
+  - name: Product
+    description: "Product Operations"
 servers:
   - url: https://{tenant}/api/v1
     variables:
@@ -56,16 +41,10 @@ paths:
     $ref: 'paths/v1/customers.yaml'
   '/v1/customers/{customer_id}':
     $ref: 'paths/v1/customers_{customer_id}.yaml'
-#  '/user':
-#    $ref: 'paths/user.yaml'
-#  '/user/list':
-#    $ref: 'paths/user-status.yaml'
-#  /pathItem:
-#    $ref: paths/pathItem.yaml
-#  /pathItemWithExamples:
-#    $ref: paths/pathItemWithExamples.yaml
-#  '/echo':
-#    $ref: 'paths/echo.yaml'
+  '/v1/products':
+    $ref: 'paths/v1/products.yaml'
+  '/v1/products/{product_id}':
+    $ref: 'paths/v1/products_{product_id}.yaml'
 security:
   - basic_auth: []
 components:
