@@ -6,7 +6,7 @@ get:
   operationId: listCustomers
   responses:
     '200':
-      description: Success
+      description: Succes
       content:
         application/json:
           schema:
