@@ -4,6 +4,7 @@ properties:
     type: string
     format: uuid
     description: Unique identifier representing a specific customer
+    readOnly: true
   name:
     $ref: name.yaml
   shipToAddress:
@@ -11,12 +12,14 @@ properties:
   billToAddress:
     $ref: address.yaml
   email:
-    type: string
+    type: [string, 'null']
     format: email
     description: Email address
     example: vldburlacu@yahoo.com
   phone:
-    type: string
+    type:
+      - string
+      - 'null'
     maxLength: 15
     minLength: 7
     description: Phone number
@@ -25,6 +28,14 @@ properties:
     type: array
     items:
       $ref: payment_method.yaml
+  dateCreated:
+    type: string
+    format: date-time
+    readOnly: true
+  dateUpdated:
+    type: string
+    format: date-time
+    readOnly: true
 required:
   - name
   - shipToAddress

@@ -4,6 +4,7 @@ properties:
     type: string
     format: uuid
     description: Unique identifier representing a specific image
+    readonly: true
   url:
     type: string
     format: url
@@ -15,7 +16,9 @@ properties:
     type: string
     format: date-time
     description: Date and time the image was created
+    readonly: true
   dateUpdated:
     type: string
     format: date-time
     description: Date and time the image was last updated
+    readonly: true

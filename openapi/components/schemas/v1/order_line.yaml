@@ -4,6 +4,7 @@ properties:
     type: string
     format: uuid
     description: The unique identifier of the order line
+    readonly: true
   product:
     $ref: order_product.yaml
   order_quantity:
@@ -16,7 +17,9 @@ properties:
     type: string
     format: date-time
     description: The date the image was created
+    readonly: true
   dateUpdated:
     type: string
     format: date-time
     description: The date the image was updated
+    readonly: true
