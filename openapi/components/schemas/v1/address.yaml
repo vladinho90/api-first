@@ -9,6 +9,7 @@ properties:
     description: Address line 1
     minLength: 3
     maxLength: 100
+    example: 123 Main St
   addressLine2:
     type: string
     description: Address line 2
@@ -19,16 +20,19 @@ properties:
     description: City
     minLength: 2
     maxLength: 100
+    example: Springfield
   state:
     type: string
     description: 2 character state code
     minLength: 2
     maxLength: 2
+    example: IL
   zip:
     type: string
     description: Zip code
     minLength: 5
     maxLength: 10
+    example: 62704
 required:
   - addressLine1
   - city
