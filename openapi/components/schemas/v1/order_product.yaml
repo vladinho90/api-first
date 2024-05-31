@@ -4,7 +4,7 @@ properties:
     type: string
     format: uuid
     description: The unique identifier of the product
-    readonly: true
+    readOnly: true
   description:
     type: string
     description: The description of the product

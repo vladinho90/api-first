@@ -4,7 +4,7 @@ properties:
     type: string
     format: uuid
     description: The unique identifier of the order
-    readonly: true
+    readOnly: true
   customer:
     $ref: order_customer.yaml
   orderStatus:
@@ -20,9 +20,9 @@ properties:
     type: string
     format: date-time
     description: The date the image was created
-    readonly: true
+    readOnly: true
   dateUpdated:
     type: string
     format: date-time
     description: The date the image was updated
-    readonly: true
+    readOnly: true
