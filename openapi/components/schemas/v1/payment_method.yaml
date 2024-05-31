@@ -8,16 +8,23 @@ properties:
     type: string
     minLength: 2
     maxLength: 100
+    example: Visa
   cardNumber:
     type: integer
+    example: 4111111111111111
   expiryMonth:
     type: integer
     minimum: 1
     maximum: 12
+    example: 12
+  expiryYear:
+    type: integer
+    example: 2022
   cvv:
     type: string
     minLength: 3
     maxLength: 4
+    example: 123
   dateCreated:
     type: string
     format: date-time
