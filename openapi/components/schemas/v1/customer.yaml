@@ -13,9 +13,13 @@ properties:
   email:
     type: string
     format: email
+    maxlength: 255
+    minLength: 3
     description: Email address
   phone:
     type: string
+    maxLength: 15
+    minLength: 7
     description: Phone number
   paymentMethods:
     type: array
