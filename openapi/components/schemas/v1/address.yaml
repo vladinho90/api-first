@@ -4,6 +4,7 @@ properties:
     type: string
     format: uuid
     description: Unique identifier representing a specific address
+    readOnly: true
   addressLine1:
     type: string
     description: Address line 1
@@ -11,7 +12,9 @@ properties:
     maxLength: 100
     example: 123 Main St
   addressLine2:
-    type: string
+    type:
+      - string
+      - 'null'
     description: Address line 2
     minLength: 3
     maxLength: 100
@@ -33,6 +36,14 @@ properties:
     minLength: 5
     maxLength: 10
     example: 62704
+  dateCreated:
+    type: string
+    format: date-time
+    readOnly: true
+  dateUpdated:
+    type: string
+    format: date-time
+    readOnly: true
 required:
   - addressLine1
   - city

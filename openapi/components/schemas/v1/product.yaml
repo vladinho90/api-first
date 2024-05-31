@@ -4,6 +4,7 @@ properties:
     type: string
     format: uuid
     description: Unique identifier representing a specific product
+    readOnly: true
   description:
     type: string
     description: Description of the product
@@ -27,7 +28,9 @@ properties:
     type: string
     format: date-time
     description: Date and time the product was created
+    readOnly: true
   dateUpdated:
     type: string
     format: date-time
     description: Date and time the product was last updated
+    readOnly: true
