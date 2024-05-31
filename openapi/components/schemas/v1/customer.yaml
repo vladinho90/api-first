@@ -13,8 +13,6 @@ properties:
   email:
     type: string
     format: email
-    maxlength: 255
-    minLength: 3
     description: Email address
   phone:
     type: string
