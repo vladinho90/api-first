@@ -9,9 +9,16 @@ properties:
     type: string
     format: url
     description: URL of the image
+    minLength: 5
+    maxLength: 500
+    example: https://example.com/image.jpg
   altText:
-    type: string
+    type:
+      - string
+      - 'null'
     description: Alternative text for the image
+    minLength: 3
+    maxLength: 255
   dateCreated:
     type: string
     format: date-time
@@ -22,3 +29,5 @@ properties:
     format: date-time
     description: Date and time the image was last updated
     readOnly: true
+required:
+  - url
