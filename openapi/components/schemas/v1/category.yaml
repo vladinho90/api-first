@@ -8,9 +8,15 @@ properties:
   category:
     type: string
     description: Category of the product
+    minLength: 3
+    maxLength: 25
+    example: Electronics
   description:
     type: string
     description: Description of the product
+    minLength: 3
+    maxLength: 255
+    example: Electronics and Gadgets
   dateCreated:
     type: string
     format: date-time
@@ -21,3 +27,6 @@ properties:
     format: date-time
     description: Date and time the product was last updated
     readOnly: true
+required:
+  - category
+  - description

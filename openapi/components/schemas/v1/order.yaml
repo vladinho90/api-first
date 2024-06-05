@@ -9,8 +9,14 @@ properties:
     $ref: order_customer.yaml
   orderStatus:
     type: string
+    enum: [NEW, HOLD, SHIPPED, DELIVERED, CLOSED]
+    default: NEW
+    description: The status of the order
+    example: NEW
   shipmentInfo:
     type: string
+    minLength: 1
+    maxLength: 255
   orderLines:
     type: array
     items:
@@ -26,3 +32,7 @@ properties:
     format: date-time
     description: The date the image was updated
     readOnly: true
+required:
+  - customer
+  - orderStatus
+  - orderLines

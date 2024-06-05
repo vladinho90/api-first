@@ -7,12 +7,18 @@ properties:
     readOnly: true
   product:
     $ref: order_product.yaml
-  order_quantity:
+  orderQuantity:
     type: integer
     description: The quantity of the product in the order
+    minimum: 1
+    maximum: 10000
+    example: 2
   ship_quantity:
     type: integer
     description: The quantity of the product shipped
+    minimum: 1
+    maximum: 10000
+    example: 2
   dateCreated:
     type: string
     format: date-time
@@ -23,3 +29,6 @@ properties:
     format: date-time
     description: The date the image was updated
     readOnly: true
+required:
+  - product
+  - orderQuantity
