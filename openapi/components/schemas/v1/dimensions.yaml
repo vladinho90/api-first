@@ -2,19 +2,19 @@ type: object
 description: The dimensions of a product
 properties:
   length:
-    type: number
+    type: integer
     description: Length of the product
     minimum: 1
     maximum: 999
     example: 10
   width:
-    type: number
+    type: integer
     description: Width of the product
     minimum: 1
     maximum: 999
     example: 10
   height:
-    type: number
+    type: integer
     description: Height of the product
     minimum: 1
     maximum: 999
