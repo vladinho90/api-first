@@ -12,9 +12,7 @@ properties:
     maxLength: 100
     example: 123 Main St
   addressLine2:
-    type:
-      - string
-      - 'null'
+    type: string
     description: Address line 2
     minLength: 3
     maxLength: 100

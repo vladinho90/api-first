@@ -13,9 +13,7 @@ properties:
     maxLength: 500
     example: https://example.com/image.jpg
   altText:
-    type:
-      - string
-      - 'null'
+    type: string
     description: Alternative text for the image
     minLength: 3
     maxLength: 255
