@@ -20,10 +20,10 @@ properties:
       $ref: image.yaml
   price:
     type: string
-    pattern: ^-?(?:0|[1-9]\\d{0,2}(?:,?\\d{3})*)(?:\\.\\d+)?$
+    pattern: "^-?(?:0|[1-9]\\d{0,2}(?:,?\\d{3})*)(?:\\.\\d+)?$"
   cost:
     type: string
-    pattern: ^-?(?:0|[1-9]\\d{0,2}(?:,?\\d{3})*)(?:\\.\\d+)?$
+    pattern: "^-?(?:0|[1-9]\\d{0,2}(?:,?\\d{3})*)(?:\\.\\d+)?$"
   dateCreated:
     $ref: '../common/iso_timestamp.yaml'
   dateUpdated:
