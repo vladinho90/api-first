@@ -16,6 +16,9 @@ properties:
     description: Address line 2
     minLength: 3
     maxLength: 100
+    oneOf:
+      - type: string
+      - type: "null"
   city:
     type: string
     description: City

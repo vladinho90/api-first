@@ -6,6 +6,9 @@ properties:
     minLength: 0
     maxLength: 25
     example: Mr.
+    oneOf:
+      - type: string
+      - type: "null"
   firstName:
     type: string
     description: First name
@@ -24,6 +27,9 @@ properties:
     minLength: 0
     maxLength: 25
     example: Jr.
+    oneOf:
+      - type: string
+      - type: "null"
 required:
   - firstName
   - lastName
