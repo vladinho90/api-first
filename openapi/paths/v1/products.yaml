@@ -17,3 +17,32 @@ get:
         application/json:
           schema:
             $ref: ../../components/schemas/Problem.yaml
+post:
+  tags:
+    - Products
+  summary: Create a new product
+  description: Create a new product
+  operationId: createProduct
+  requestBody:
+    description: Product to add
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/v1/product.yaml
+  responses:
+    '201':
+      description: Created
+      headers:
+        Location:
+          description: The location of the new product
+          schema:
+            type: string
+            format: uri
+            example: /v1/products/cd7a0b84-70f0-44b0-a425-459fee4c2593
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/Problem.yaml
