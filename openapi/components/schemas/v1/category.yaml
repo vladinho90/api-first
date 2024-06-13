@@ -5,6 +5,7 @@ properties:
     format: uuid
     description: Unique identifier representing a specific product
     readOnly: true
+    nullable: true
   category:
     type: string
     description: Category of the product
