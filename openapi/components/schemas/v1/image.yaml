@@ -17,6 +17,7 @@ properties:
     description: Alternative text for the image
     minLength: 3
     maxLength: 255
+    nullable: true
   dateCreated:
     $ref: '../common/iso_timestamp.yaml'
   dateUpdated:

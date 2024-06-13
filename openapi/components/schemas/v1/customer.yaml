@@ -16,12 +16,14 @@ properties:
     format: email
     description: Email address
     example: vldburlacu@yahoo.com
+    nullable: true
   phone:
     type: string
     maxLength: 15
     minLength: 7
     description: Phone number
     example: 123-456-7890
+    nullable: true
   paymentMethods:
     type: array
     items:
