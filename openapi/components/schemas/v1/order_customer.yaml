@@ -14,6 +14,9 @@ properties:
   email:
     type: string
     description: The email address of the customer
+    oneOf:
+      - type: string
+      - type: "null"
   phone:
     type: string
     description: The phone number of the customer
