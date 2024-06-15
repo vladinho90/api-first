@@ -17,3 +17,30 @@ get:
         application/json:
           schema:
             $ref: ../../components/schemas/Problem.yaml
+post:
+  tags:
+    - Order
+  summary: Create a new order
+  description: Create a new order
+  operationId: createOrder
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/v1/order_create.yaml
+  responses:
+    '201':
+      description: Order Created
+      headers:
+        Location:
+          example: /v1/orders/123e4567-e89b-12d3-a456-426614174000
+          description: The location of the created order
+          schema:
+            type: string
+            format: uri
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/Problem.yaml
