@@ -5,6 +5,7 @@ properties:
     format: uuid
     description: Unique identifier representing a specific customer
     readOnly: true
+    nullable: true
   name:
     $ref: name.yaml
   shipToAddress:
@@ -28,6 +29,7 @@ properties:
     type: array
     items:
       $ref: payment_method.yaml
+    nullable: true
   dateCreated:
     $ref: '../common/iso_timestamp.yaml'
   dateUpdated:

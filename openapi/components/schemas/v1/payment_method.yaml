@@ -5,6 +5,7 @@ properties:
     format: uuid
     description: Unique identifier representing a specific payment method
     readOnly: true
+    nullable: true
   displayName:
     type: string
     minLength: 2
