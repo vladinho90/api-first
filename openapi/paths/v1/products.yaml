@@ -1,6 +1,6 @@
 get:
   tags:
-    - Products
+    - Product
   summary: Get a list of products
   description: Get a list of product
   operationId: listProducts
@@ -19,7 +19,7 @@ get:
             $ref: ../../components/schemas/Problem.yaml
 post:
   tags:
-    - Products
+    - Product
   summary: Create a new product
   description: Create a new product
   operationId: createProduct
