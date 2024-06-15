@@ -17,6 +17,7 @@ properties:
     type: string
     minLength: 1
     maxLength: 255
+    nullable: true
   orderLines:
     type: array
     items:
