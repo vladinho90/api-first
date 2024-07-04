@@ -1,0 +1,23 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: Unique identifier representing a specific image
+    nullable: true
+  url:
+    type: string
+    format: url
+    description: URL of the image
+    minLength: 5
+    maxLength: 500
+    example: https://example.com/image.jpg
+  altText:
+    type: string
+    description: Alternative text for the image
+    minLength: 3
+    maxLength: 255
+    nullable: true
+required:
+  - id
+  - url
