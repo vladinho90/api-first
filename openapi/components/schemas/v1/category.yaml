@@ -30,4 +30,5 @@ properties:
     $ref: '../common/iso_timestamp.yaml'
 required:
   - category
+  - categoryCode
   - description
